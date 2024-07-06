@@ -1,0 +1,111 @@
+/* App.css */
+
+.App {
+	text-align: center;
+	padding: 20px;
+}
+
+.hangman-canvas {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+
+.hangman-canvas>div {
+	width: 20px;
+	height: 20px;
+	background-color: #333;
+	margin: 0 5px;
+	border-radius: 50%;
+}
+
+.word-display {
+	margin: 20px;
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.letter {
+	margin: 0 5px;
+	font-size: 24px;
+	display: inline-block;
+	border-bottom: 2px solid #333;
+	padding-bottom: 5px;
+	transition: all 0.3s ease;
+}
+
+.letter.guessed {
+	color: rgb(106, 192, 238);
+	border-bottom: 2px solid rgb(22, 96, 118);
+}
+
+/* App.css */
+/* ... (previous code) */
+
+.result-message {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 20px 0;
+	color: #062e5b;
+}
+
+/* ... (remaining code) */
+
+.keyboard {
+	margin: 20px;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 10px;
+}
+
+.keyboard button {
+	font-size: 18px;
+	padding: 10px 15px;
+	background-color: #7cbafc;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.keyboard button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+.keyboard button:hover {
+	background-color: #c2e2ff;
+}
+
+p {
+	font-size: 24px;
+	font-weight: bold;
+	color: #002c4f;
+	margin-top: 20px;
+}
+
+@keyframes bounce {
+
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+	}
+
+	60% {
+		transform: translateY(-10px);
+	}
+}
+
+.bounce {
+	animation: bounce 1s infinite;
+}
